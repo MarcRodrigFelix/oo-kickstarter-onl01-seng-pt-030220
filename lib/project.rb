@@ -7,8 +7,8 @@ class Project
   end
 
   def add_backer(backer)
-    @backers << backer
-    backer.backed_projects << self
+    @backers << backer  #=> backer is a Backer instance.
+    backer.backed_projects << self  #calling instance method from Backer class with our Backer instance.
   end
 
 
